@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: "Vijay Iyyangar Bakery, B.C. Road, Bantwal, Karnataka. Serving fresh traditional Iyengar bakery favorites, custom designer cakes, pastries, puffs, and breads. Order online with WhatsApp integration.",
   keywords: "Vijay Iyyangar Bakery, Iyengar Bakery BC Road, Bantwal Bakery, Custom Cakes Bantwal, Fresh Breads, Honey Cake, Dil Pasand, Khara Bun",
   verification: {
-    google: "T5AaBslvTN6aDCI...",
+    google: "T5AaBsIvTN6aDCRrmWqaXYxL3j9v7vG5-xS7yTcesIk",
   },
 };
 
