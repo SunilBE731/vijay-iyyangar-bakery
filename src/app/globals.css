@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFF8F0;
+  --foreground: #2E1E12;
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+.dark {
+  --background: #1A130E;
+  --foreground: #FFF8F0;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  
+  --color-cream: #FFF8F0;
+  --color-warm-brown: #6F4E37;
+  --color-gold: #D4A017;
+  --color-light-beige: #F5E6D3;
+  --color-dark-cocoa: #2E1E12;
+  --color-soft-cream: #FFFDFB;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float-slow 8s ease-in-out infinite;
+  --animate-fade-in: fadeIn 1s ease-out forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #6F4E37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4A017;
+}
+
+.glassmorphism {
+  background: rgba(255, 248, 240, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(111, 78, 55, 0.1);
+}
+
+.dark .glassmorphism {
+  background: rgba(26, 19, 14, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 160, 23, 0.1);
+}
+
+/* Custom selection styling */
+::selection {
+  background-color: #6F4E37;
+  color: #FFF8F0;
+}
+
+.dark ::selection {
+  background-color: #D4A017;
+  color: #1A130E;
+}
